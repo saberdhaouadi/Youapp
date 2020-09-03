@@ -5,12 +5,12 @@ pipeline {
     stages {
        stage('Test') {
            steps {
-                sh 'python3 test.py'
+                sh "python3 test.py"
            }
        }
        stage('Build') {
            steps {
-                sh 'pip3 install .'
+                sh "pip3 install ."
            }
        }
 }
